@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ödeme Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .payment-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .payment-form input,
+        .payment-form button {
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .payment-form button {
+            background-color: #777;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-form button:hover {
+            background-color: #555;
+        }
+
+        .back-button {
+            text-decoration: none;
+            color: #2f2f2f;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="payment-title">Ödeme Sayfası</h3>
+        <form class="payment-form" action="payment_success.html" method="GET">
+            <input type="text" placeholder="Ad Soyad" required />
+            <input type="text" placeholder="Adres" required />
+            <input type="text" placeholder="Kredi Kartı Numarası" required />
+            <input type="text" placeholder="CVV" required />
+            <button type="submit">Ödemeyi Tamamla</button>
+        </form>
+        
+        <a href="basket.html" class="back-button">Sepete Geri Dön</a>
+    </div>
+
+</body>
+
+</html>
